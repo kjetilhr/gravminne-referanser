@@ -1,0 +1,33 @@
+{
+  "name": "Gravminne-referanser",
+  "description": "Hjelper deg med å legge til Wikidata-referanser til Slekt og Data Gravminnebasen",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "webRequest", "tabs"],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "host_permissions": ["https://www.slektogdata.no/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.slektogdata.no/gravminner/grav/*"],
+      "js": ["slektogdata.js"],
+      "css": ["slektogdata.css"]
+    },
+    {
+      "matches": ["https://test.wikidata.org/*"],
+      "js": ["wikidata.js"],
+      "css": ["wikidata.css"]
+    },
+    {
+      "matches": ["https://www.wikidata.org/*"],
+      "js": ["wikidata.js"],
+      "css": ["wikidata.css"]
+    }
+  ]
+}

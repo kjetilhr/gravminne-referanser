@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": 1629062635019,
+    "files": [
+      {
+        "filename": "background.js",
+        "previous": 1434,
+        "size": 724,
+        "diff": -710
+      },
+      {
+        "filename": "slektogdata.css",
+        "previous": 1258,
+        "size": 1258,
+        "diff": 0
+      },
+      {
+        "filename": "slektogdata.js",
+        "previous": 7117,
+        "size": 3906,
+        "diff": -3211
+      },
+      { "filename": "wikidata.css", "previous": 1256, "size": 1256, "diff": 0 },
+      {
+        "filename": "wikidata.js",
+        "previous": 9184,
+        "size": 5471,
+        "diff": -3713
+      }
+    ]
+  }
+]
